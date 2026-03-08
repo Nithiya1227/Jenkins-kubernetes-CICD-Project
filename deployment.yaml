@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd-nodejs-deployment
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: cicd-node
+
+  template:
+    metadata:
+      labels:
+        app: cicd-node
+
+    spec:
+      containers:
+      - name: node-container
+        image: nithiyab12/cicd-nodejs-app:latest
+        ports:
+        - containerPort: 3000
