@@ -79,13 +79,13 @@ Hello from Jenkins CI/CD Pod
 ## Project Screenshots
 
 ### Jenkins Pipeline Success
-![Jenkins Pipeline](./screenshots/jenkins-success.png)
+![Jenkins Pipeline](./screenshots/jenkins-pods.png)
 
 ### Kubernetes Pod Running
-![Kubernetes Pod](./screenshots/kubernetes-pod.png)
+![Kubernetes Pod](./screenshots/pod-k8s.png)
 
 ### Application Output in Browser
-![Application Output](./screenshots/app-output.png)
+![Application Output](./screenshots/jenkins-browser-output.png)
 
 -----
 
