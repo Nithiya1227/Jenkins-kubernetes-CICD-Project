@@ -20,19 +20,7 @@ The pipeline automates the process from source code commit → build → deploym
 
 ## Project Architecture
 
-GitHub Repository
-        │
-        ▼
-     Jenkins Pipeline
-        │
-        ▼
-    Docker Image Build
-        │
-        ▼
-  Kubernetes Deployment
-        │
-        ▼
-  Application Running in Pod
+GitHub Repository -> Jenkins Pipeline -> Docker Image Build -> Kubernetes Deployment -> Application Running in Pod
 
 -----
 
@@ -47,20 +35,6 @@ GitHub Repository
 7. The application becomes accessible in the browser.
 
 -----
-
-## Project Structure
-
-Jenkins-kubernetes-CICD-Project
-│
-├── Jenkinsfile
-├── Dockerfile
-├── deployment.yaml
-├── service.yaml
-└── app
-    ├── package.json
-    └── server.js
-
-----
 
 ## Application Output
 
@@ -82,7 +56,7 @@ Hello from Jenkins CI/CD Pod
 ![Jenkins Pipeline](./screenshots/jenkins-pods.png)
 
 ### Kubernetes Pod Running
-![Kubernetes Pod](./screenshots/pod-k8s.png)
+![Kubernetes Pod](./screenshots/pods-k8s.png)
 
 ### Application Output in Browser
 ![Application Output](./screenshots/jenkins-browser-output.png)
